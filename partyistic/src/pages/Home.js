@@ -3,18 +3,18 @@
 import React, { useEffect } from 'react';
 import Image from 'react-bootstrap/Image';
 import Nav from 'react-bootstrap/Nav';
-import { useHistory } from 'react-router-dom';
+// import { useHistory } from 'react-router-dom';
 import Carousel from 'react-bootstrap/Carousel';
 import './Home.css';
 
 export default function Home(props) {
-  const history = useHistory();
+  // const history = useHistory();
   useEffect(() => {
-    let get = localStorage.getItem('access_token');
+    // let get = localStorage.getItem('access_token');
 
-    if (!get) {
-      history.push('/Login');
-    }
+    // if (!get) {
+    //   history.push('/Login');
+    // }
   });
 
   return (

@@ -6,16 +6,16 @@ import Carousel from 'react-bootstrap/Carousel';
 import Card from 'react-bootstrap/Card';
 import Nav from 'react-bootstrap/Nav';
 import useResource from '../hook/UseInspiration';
-import { useHistory } from 'react-router-dom';
+// import { useHistory } from 'react-router-dom';
 
 export default function Inspiration(props) {
-  const history = useHistory();
+  // const history = useHistory();
   useEffect(() => {
-    let get = localStorage.getItem('access_token');
+    // let get = localStorage.getItem('access_token');
 
-    if (!get) {
-      history.push('/Login');
-    }
+    // if (!get) {
+    //   history.push('/Login');
+    // }
   });
 
   const { resources } = useResource();
@@ -56,8 +56,8 @@ export default function Inspiration(props) {
                       borderRadius: '1%',
                     }}
                     src={item.images.images[0]}
-                    alt={item.images.images[0]}
-                  />
+                    alt={item.images.images[0]}                  
+                    />
                 </Carousel.Item>
               )
             );
@@ -97,8 +97,8 @@ export default function Inspiration(props) {
                       <Card.Img
                         style={{ width: '100%', height: '100%' }}
                         variant='top'
-                        src={item.images.images[0]}
-                      />
+                        src={item.images.images[0]}                 
+                        />
                     </Card>
                   </Nav.Link>
                 </Nav>
